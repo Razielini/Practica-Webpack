@@ -7,12 +7,15 @@
     "build:manual": "webpack --entry ./src/index.js --output ./dist/bundle.js --mode development",
     "build:local": "webpack --mode production",
     "build:external": "webpack --config ./external/webpack.config.js --mode development",
-    "build:multiple": "webpack --config ./multiple-entry-points/webpack.config.js"
+    "build:multiple": "webpack --config ./multiple-entry-points/webpack.config.js",
+    "build:css": "webpack --config ./css-style-loaders/webpack.config.js"
   },
   "author": "Razielini",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "css-loader": "^3.5.3",
+    "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   }
