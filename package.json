@@ -6,7 +6,8 @@
   "scripts": {
     "build:manual": "webpack --entry ./src/index.js --output ./dist/bundle.js --mode development",
     "build:local": "webpack --mode production",
-    "build:external": "webpack --config ./external/webpack.config.js --mode development"
+    "build:external": "webpack --config ./external/webpack.config.js --mode development",
+    "build:multiple": "webpack --config ./multiple-entry-points/webpack.config.js"
   },
   "author": "Razielini",
   "license": "ISC",
