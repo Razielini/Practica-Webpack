@@ -4,7 +4,9 @@
   "description": "Una practica de Webpack",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode development"
+    "build:manual": "webpack --entry ./src/index.js --output ./dist/bundle.js --mode development",
+    "build:local": "webpack --mode production",
+    "build:external": "webpack --config ./external/webpack.config.js --mode development"
   },
   "author": "Razielini",
   "license": "ISC",
