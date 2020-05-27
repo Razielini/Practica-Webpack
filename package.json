@@ -8,13 +8,16 @@
     "build:local": "webpack --mode production",
     "build:external": "webpack --config ./external/webpack.config.js --mode development",
     "build:multiple": "webpack --config ./multiple-entry-points/webpack.config.js",
-    "build:css": "webpack --config ./css-style-loaders/webpack.config.js"
+    "build:css": "webpack --config ./css-style-loaders/webpack.config.js",
+    "build:plugins": "webpack --config ./plugins/webpack.config.js"
   },
   "author": "Razielini",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
     "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
