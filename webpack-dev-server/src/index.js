@@ -1,4 +1,11 @@
 import './styles/styles.css'
+import text from './js/index.js'
 
-document.body.innerHTML = 'Hola Mundo'
-console.log('Hola Mundo desde Home')
+text()
+
+if (module.hot) {
+  module.hot.accept('./js/index.js', function () {
+    console.log('hot module')
+    text()
+  })
+}
