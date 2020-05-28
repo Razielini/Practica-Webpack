@@ -11,14 +11,21 @@
     "build:css": "webpack --config ./css-style-loaders/webpack.config.js",
     "build:plugins": "webpack --config ./plugins/webpack.config.js",
     "build:dev": "webpack-dev-server --config ./webpack-dev-server/webpack.config.js",
-    "build:babel": "webpack-dev-server --config ./babel/webpack.config.js"
+    "build:babel": "webpack-dev-server --config ./babel/webpack.config.js",
+    "build:react": "webpack-dev-server --config ./react/webpack.config.js"
   },
   "author": "Razielini",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/runtime": "^7.10.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.1",
     "@babel/preset-env": "^7.10.1",
+    "@babel/preset-react": "^7.10.1",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
     "html-webpack-plugin": "^4.3.0",
